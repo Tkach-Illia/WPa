@@ -20,6 +20,7 @@ const MyHeader = () => {
                 <hr className={styles.hamburger} style={{marginTop: '2%'}}/>
                 <hr className={styles.hamburger}/>
             </div>
+
         </div>
     );
 };
