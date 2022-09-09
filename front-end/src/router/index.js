@@ -7,7 +7,7 @@ import PostIdPage from "../pages/PostIdPage";
 export const routes = [
     {path: '/posts_find', element: <Main/>},
     {path: '/map', element: <Map/>},
-    {path: '/posts_lost', element: <Lost/>},
-    {path: '/posts/:id', element: <PostIdPage/>},
-    {path: '/account/:id', element: <AccountIdPage/>}
+    {path: '/posts_lost', element: <Lost/>}
+    // {path: '/posts/:id', element: <PostIdPage/>},
+    // {path: '/account/:id', element: <AccountIdPage/>}
 ]
