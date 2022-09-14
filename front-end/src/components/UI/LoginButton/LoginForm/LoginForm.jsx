@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import styles from "./MyForm.module.css";
-import LogPage from "../Variants/LogPage";
-import SignPage from "../Variants/SignPage";
+import styles from "./LoginForm.module.css";
+import LogInPage from "../Variants/LogInPage";
+import SignInPage from "../Variants/SignInPage";
 
-const MyForm = ({visibleLogIn, setVisibleLogIn, visibleSignIn, setVisibleSignIn}) => {
+const LoginForm = ({visibleLogIn, setVisibleLogIn, visibleSignIn, setVisibleSignIn}) => {
     const [data, setData] = useState({login: '',email:'', password: ''});
     const style =[styles.myForm]
 
@@ -11,12 +11,12 @@ const MyForm = ({visibleLogIn, setVisibleLogIn, visibleSignIn, setVisibleSignIn}
         style.push(styles.active)
     }
 
-    function setVisible(bool){
-        setVisibleLogIn(bool)
-        setVisibleSignIn(bool)
+    const setVisible = (status) => {
+        setVisibleLogIn(status)
+        setVisibleSignIn(status)
     }
 
-    function sendData(data){
+    const sendData = (data) => {
         console.log(data)
         setVisible(false)
         setData({login: '',email:'', password: ''});
@@ -26,8 +26,8 @@ const MyForm = ({visibleLogIn, setVisibleLogIn, visibleSignIn, setVisibleSignIn}
         <div className={style.join(' ')} onClick={()=>setVisible(false)}>
             <div onClick={(e) => e.stopPropagation()}>
                 {visibleLogIn
-                    ?<LogPage data={data} setData={setData} callback={sendData}/>
-                    :<SignPage data={data} setData={setData} callback={sendData}/>
+                    ?<LogInPage userData={data} setUserData={setData} callback={sendData}/>
+                    :<SignInPage userData={data} setUserData={setData} callback={sendData}/>
                 }
 
             </div>
@@ -35,4 +35,4 @@ const MyForm = ({visibleLogIn, setVisibleLogIn, visibleSignIn, setVisibleSignIn}
     );
 };
 
-export default MyForm;
+export default LoginForm;

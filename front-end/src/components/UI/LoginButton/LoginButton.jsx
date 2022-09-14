@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./LoginButton.module.css";
-import MyButton from "./MyButton/MyButton";
-import MyForm from "./MyForm/MyForm";
+import ToggleButton from "./ToggleButton/ToggleButton";
+import LoginForm from "./LoginForm/LoginForm";
 
 const LoginButton = () => {
 
@@ -10,9 +10,9 @@ const LoginButton = () => {
 
     return (
         <div className={styles.loginBtn__Pos}>
-            <MyButton text={"Log In"} callback={setVisibleLogIn} style={styles.loginBtn__Log}/>
-            <MyButton text={"Sign In"} callback={setVisibleSignIn} style={styles.loginBtn__Sign}/>
-            <MyForm
+            <ToggleButton text={"Log In"} callback={setVisibleLogIn} style={styles.loginBtn__Log}/>
+            <ToggleButton text={"Sign In"} callback={setVisibleSignIn} style={styles.loginBtn__Sign}/>
+            <LoginForm
                 visibleLogIn={visibleLogIn}
                 setVisibleLogIn={setVisibleLogIn}
                 visibleSignIn={visibleSignIn}

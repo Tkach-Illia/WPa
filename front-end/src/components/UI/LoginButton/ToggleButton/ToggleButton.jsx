@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "../LoginButton.module.css";
+import styles from '../LoginButton.module.css';
 
-const MyButton = ({text, callback,style}) => {
+const ToggleButton = ({text, callback, style}) => {
     return (
         <div
             className={[style, styles.loginBtn].join(" ")}
@@ -12,4 +12,4 @@ const MyButton = ({text, callback,style}) => {
     );
 };
 
-export default MyButton;
+export default ToggleButton;

@@ -1,29 +1,29 @@
 import React from 'react';
-import cl from './LogPage.module.css'
+import cl from './Page.module.css'
 
-const LogPage = ({data, setData, callback}) => {
+const LogInPage = ({userData, setUserData, callback}) => {
     return (
         <div className={cl.box}>
             <div className={cl.text_box}/>
             <span className={cl.text}>Log In</span>
             <input
                 className={cl.input}
-                value={data.login}
+                value={userData.login}
                 type="text"
-                onChange={e => setData({...data, login: e.target.value})}
+                onChange={e => setUserData({...userData, login: e.target.value})}
                 placeholder = "login"
             />
             <input
                 className={cl.input}
                 style={{marginTop: '15%'}}
-                value={data.password}
+                value={userData.password}
                 type="text"
-                onChange={e => setData({...data, password: e.target.value})}
+                onChange={e => setUserData({...userData, password: e.target.value})}
                 placeholder = "password"
             />
-            <button className={cl.button} onClick={()=>callback(data)}>Confirm</button>
+            <button className={cl.button} onClick={()=>callback(userData)}>Confirm</button>
         </div>
     );
 };
 
-export default LogPage;
+export default LogInPage;

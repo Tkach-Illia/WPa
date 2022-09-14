@@ -1,3 +1,4 @@
+import React from 'react';
 import Main from "../pages/Main";
 import Map from "../pages/Map";
 import Lost from "../pages/Lost";

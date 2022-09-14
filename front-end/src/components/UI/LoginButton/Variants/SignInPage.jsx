@@ -1,37 +1,37 @@
 import React from 'react';
-import cl from './LogPage.module.css'
+import cl from './Page.module.css'
 
-const SignPage = ({data, setData, callback}) => {
+const SignInPage = ({userData, setUserData, callback}) => {
     return (
         <div className={cl.box}>
             <div className={cl.text_box}/>
             <span className={cl.text}>Sign In</span>
             <input
                 className={cl.input}
-                value={data.login}
+                value={userData.login}
                 type="text"
-                onChange={e => setData({...data, login: e.target.value})}
+                onChange={e => setUserData({...userData, login: e.target.value})}
                 placeholder = "login"
             />
             <input
                 className={cl.input}
                 style={{marginTop: '15%'}}
-                value={data.email}
+                value={userData.email}
                 type="text"
-                onChange={e => setData({...data, email: e.target.value})}
+                onChange={e => setUserData({...userData, email: e.target.value})}
                 placeholder = "email"
             />
             <input
                 className={cl.input}
                 style={{marginTop: '30%'}}
-                value={data.password}
+                value={userData.password}
                 type="text"
-                onChange={e => setData({...data, password: e.target.value})}
+                onChange={e => setUserData({...userData, password: e.target.value})}
                 placeholder = "password"
             />
-            <button className={cl.button} style={{top: '80%'}} onClick={()=>callback(data)}>Confirm</button>
+            <button className={cl.button} style={{top: '80%'}} onClick={()=>callback(userData)}>Confirm</button>
         </div>
     );
 };
 
-export default SignPage;
+export default SignInPage;

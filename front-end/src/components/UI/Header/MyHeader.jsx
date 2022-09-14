@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MyHeader.module.css'
-import LoginButton from "../LoginButton/LoginButton";
-import Hamburger from "../Hamburger/Hamburger";
+import LoginButton from '../LoginButton/LoginButton';
+import Hamburger from '../Hamburger/Hamburger';
 
 const MyHeader = () => {
     return (
