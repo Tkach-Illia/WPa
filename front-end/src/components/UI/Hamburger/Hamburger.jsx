@@ -6,10 +6,6 @@ const Hamburger = () =>
 {
     const [visibleNavBar, setVisibleNavBar] = useState(false)
 
-    if(visibleNavBar){
-
-    }
-
     return (
         <div>
             <Lines visible={visibleNavBar} callback={setVisibleNavBar}/>
