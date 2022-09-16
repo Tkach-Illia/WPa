@@ -1,12 +1,15 @@
-import React from 'react';
-import styles from "./Hamburger.module.css";
+import React, {useState} from 'react';
+import Lines from "./Lines/Lines";
+import NavBar from "./NavBar/NavBar";
 
-const Hamburger = () => {
+const Hamburger = () =>
+{
+    const [visibleNavBar, setVisibleNavBar] = useState(false)
+
     return (
         <div>
-            <hr className={styles.hamburger} style={{marginTop: '1%'}}/>
-            <hr className={styles.hamburger} style={{marginTop: '2%'}}/>
-            <hr className={styles.hamburger}/>
+            <Lines callback={() => setVisibleNavBar(!visibleNavBar)}/>
+            <NavBar visible={visibleNavBar} callback={setVisibleNavBar}/>
         </div>
     );
 };

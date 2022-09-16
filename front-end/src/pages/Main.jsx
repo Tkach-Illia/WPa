@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 const Main = () => {
     const router = useNavigate()
     return (
-        <div>
+        <div style={{marginTop: '15%'}}>
             <button onClick={() => router('../')}>main</button>
             <button onClick={() => router('../map')}>map</button>
             <button onClick={() => router('../posts_lost')}>lost</button>

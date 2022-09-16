@@ -1,0 +1,17 @@
+.hamburger{
+    cursor: pointer;
+    width: 3.5%;
+    min-width: 30px;
+    position: absolute;
+    left: 95%;
+    top: 15%;
+}
+
+.hamburger:hover .hamburger__line{
+    border-color: #ba58cc;
+}
+
+.hamburger__line{
+    margin-top: 10px;
+    border: 4px solid #9648A6;
+}
