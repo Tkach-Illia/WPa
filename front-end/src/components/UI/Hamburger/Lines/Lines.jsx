@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from "./Lines.module.css";
 
-const Lines = ({visible, callback}) => {
+const Lines = ({callback}) => {
     return (
         <div
             className={styles.hamburger}
-            onClick={() => callback(!visible)}
+            onClick={callback}
         >
             <hr className={styles.hamburger__line}/>
             <hr className={styles.hamburger__line}/>
