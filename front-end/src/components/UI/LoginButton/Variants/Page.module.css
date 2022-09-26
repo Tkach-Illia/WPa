@@ -1,74 +1,73 @@
 .box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    position: absolute;
-    width: 35%;
-    height: 60%;
-    left: 32.5%;
-    top: 20%;
+  position: absolute;
+  width: 35%;
+  height: 60%;
+  left: 32.5%;
+  top: 20%;
 
-    background: #FFF8B6;
-    border: 2px solid #9648A6;
-    border-radius: 40px;
+  background: #fff8b6;
+  border: 2px solid #9648a6;
+  border-radius: 40px;
 }
-.text_box{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background: linear-gradient(95.18deg, #9648A6 40.13%, #CA23ED 75.52%);
-    border-radius: 36px 36px 0 0;
+.text_box {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(95.18deg, #9648a6 40.13%, #ca23ed 75.52%);
+  border-radius: 36px 36px 0 0;
 }
 .text {
-    position: absolute;
-    width: 217px;
-    height: 48px;
-    top: 5%;
-    left: 10%;
+  position: absolute;
+  width: 217px;
+  height: 48px;
+  top: 5%;
+  left: 10%;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 .input {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    position: absolute;
-    width: 80%;
-    height: 10%;
-    left: 10%;
-    top: 30%;
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  left: 10%;
+  top: 30%;
 
-    font-size: 150%;
+  font-size: 150%;
 
-    background: #FFFFFF;
-    border: 2px solid #AFAFAF;
-    border-radius: 50px;
+  background: #ffffff;
+  border: 2px solid #afafaf;
+  border-radius: 50px;
 }
-.input::placeholder{
-    padding-left: 30px;
+.input::placeholder {
+  padding-left: 30px;
 }
 
 .button {
-    margin: auto;
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    top: 75%;
-    left: 30%;
+  margin: auto;
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  top: 75%;
+  left: 30%;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #ffffff;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background: #1E1E1E;
-    border-radius: 50px;
+  background: #1e1e1e;
+  border-radius: 50px;
 }

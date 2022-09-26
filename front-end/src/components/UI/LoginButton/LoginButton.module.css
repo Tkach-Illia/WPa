@@ -1,34 +1,34 @@
-.loginBtn{
-    display:  inline-block;
-    position: absolute;
-    cursor: pointer;
-    min-width: 50px;
-    width: 7%;
-    height: 50px;
+.loginBtn {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  min-width: 50px;
+  width: 7%;
+  height: 50px;
 
-    background: #9648A6;
-    border-radius: 10px 0;
+  background: #9648a6;
+  border-radius: 10px 0;
 }
-.loginBtn:hover{
-    border: 4px solid #9648A6;
-    background: #ba58cc;
+.loginBtn:hover {
+  border: 4px solid #9648a6;
+  background: #ba58cc;
 }
-.loginBtn__Pos{
-    margin-left: 77%;
-    margin-top: 1%;
+.loginBtn__Pos {
+  margin-left: 77%;
+  margin-top: 1%;
 }
-.loginBtn__Sign{
-    margin-left: 7.2%;
+.loginBtn__Sign {
+  margin-left: 7.2%;
 }
-.loginBtn__Log{
-    margin-top: 10px;
+.loginBtn__Log {
+  margin-top: 10px;
 }
 
-.btnText{
-    margin-top: 10px;
-    text-align: center;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
+.btnText {
+  margin-top: 10px;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }

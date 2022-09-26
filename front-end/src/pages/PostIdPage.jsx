@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const PostIdPage = () => {
-    return (
-        <div>
-            Id
-        </div>
-    );
+  return <div>Id</div>;
 };
 
 export default PostIdPage;

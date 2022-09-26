@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const AccountIdPage = () => {
-    return (
-        <div>
-            Acc
-        </div>
-    );
+  return <div>Acc</div>;
 };
 
 export default AccountIdPage;
