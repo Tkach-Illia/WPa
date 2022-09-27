@@ -1,8 +1,8 @@
 import React from "react";
-import { routes } from "../../router";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { routes } from "../../router";
 
-const AppRouter = () => {
+function AppRouter() {
   return (
     <Routes>
       {routes.map((route) => (
@@ -11,6 +11,6 @@ const AppRouter = () => {
       <Route path="/*" element={<Navigate to="/posts_find" replace />} />
     </Routes>
   );
-};
+}
 
 export default AppRouter;

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Lost = () => {
+function Lost() {
   return <div>Losts</div>;
-};
+}
 
 export default Lost;

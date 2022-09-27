@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../LoginButton.module.css";
 
-const ToggleButton = ({ text, callback, style }) => {
+function ToggleButton({ text, callback, style }) {
   return (
     <div
       className={[style, styles.loginBtn].join(" ")}
@@ -10,6 +10,6 @@ const ToggleButton = ({ text, callback, style }) => {
       <h1 className={styles.btnText}>{text}</h1>
     </div>
   );
-};
+}
 
 export default ToggleButton;

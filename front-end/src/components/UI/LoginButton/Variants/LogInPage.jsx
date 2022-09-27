@@ -1,7 +1,7 @@
 import React from "react";
 import cl from "./Page.module.css";
 
-const LogInPage = ({ userData, setUserData, callback }) => {
+function LogInPage({ userData, setUserData, callback }) {
   return (
     <div className={cl.box}>
       <div className={cl.text_box} />
@@ -21,11 +21,13 @@ const LogInPage = ({ userData, setUserData, callback }) => {
         onChange={(e) => setUserData({ ...userData, password: e.target.value })}
         placeholder="password"
       />
-      <button className={cl.button} onClick={() => callback(userData)}>
+      <button
+          type="button"
+          className={cl.button} onClick={() => callback(userData)}>
         Confirm
       </button>
     </div>
   );
-};
+}
 
 export default LogInPage;

@@ -3,7 +3,7 @@ import styles from "./MyHeader.module.css";
 import LoginButton from "../LoginButton/LoginButton";
 import Hamburger from "../Hamburger/Hamburger";
 
-const MyHeader = () => {
+function MyHeader() {
   return (
     <div className={styles.myHeader}>
       <h1 className={styles.name}>Find Pet</h1>
@@ -11,6 +11,6 @@ const MyHeader = () => {
       <Hamburger />
     </div>
   );
-};
+}
 
 export default MyHeader;

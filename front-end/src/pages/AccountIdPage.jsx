@@ -1,7 +1,7 @@
 import React from "react";
 
-const AccountIdPage = () => {
+function AccountIdPage() {
   return <div>Acc</div>;
-};
+}
 
 export default AccountIdPage;

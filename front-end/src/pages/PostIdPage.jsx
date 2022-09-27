@@ -1,7 +1,7 @@
 import React from "react";
 
-const PostIdPage = () => {
+function PostIdPage() {
   return <div>Id</div>;
-};
+}
 
 export default PostIdPage;

@@ -3,12 +3,12 @@ import styles from "./LoginForm.module.css";
 import LogInPage from "../Variants/LogInPage";
 import SignInPage from "../Variants/SignInPage";
 
-const LoginForm = ({
+function LoginForm({
   visibleLogIn,
   setVisibleLogIn,
   visibleSignIn,
   setVisibleSignIn,
-}) => {
+}) {
   const [data, setData] = useState({ login: "", email: "", password: "" });
   const style = [styles.myForm];
 
@@ -21,8 +21,8 @@ const LoginForm = ({
     setVisibleSignIn(status);
   };
 
-  const sendData = (data) => {
-    console.log(data);
+  const sendData = (userData) => {
+    console.log(userData);
     setVisible(false);
     setData({ login: "", email: "", password: "" });
   };
@@ -46,6 +46,6 @@ const LoginForm = ({
       </div>
     </div>
   );
-};
+}
 
 export default LoginForm;

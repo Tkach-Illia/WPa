@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Lines from "./Lines/Lines";
 import NavBar from "./NavBar/NavBar";
 
-const Hamburger = () => {
+function Hamburger() {
   const [visibleNavBar, setVisibleNavBar] = useState(false);
 
   return (
@@ -11,6 +11,6 @@ const Hamburger = () => {
       <NavBar visible={visibleNavBar} callback={setVisibleNavBar} />
     </div>
   );
-};
+}
 
 export default Hamburger;

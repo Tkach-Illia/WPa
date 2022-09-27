@@ -3,19 +3,19 @@ import styles from "./LoginButton.module.css";
 import ToggleButton from "./ToggleButton/ToggleButton";
 import LoginForm from "./LoginForm/LoginForm";
 
-const LoginButton = () => {
+function LoginButton() {
   const [visibleLogIn, setVisibleLogIn] = useState(false);
   const [visibleSignIn, setVisibleSignIn] = useState(false);
 
   return (
     <div className={styles.loginBtn__Pos}>
       <ToggleButton
-        text={"Log In"}
+        text="Log In"
         callback={setVisibleLogIn}
         style={styles.loginBtn__Log}
       />
       <ToggleButton
-        text={"Sign In"}
+        text="Sign In"
         callback={setVisibleSignIn}
         style={styles.loginBtn__Sign}
       />
@@ -27,6 +27,6 @@ const LoginButton = () => {
       />
     </div>
   );
-};
+}
 
 export default LoginButton;
